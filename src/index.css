@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
 body {
   margin: 0;
   padding: 0;
   background-color: #000000;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 * {
@@ -39,6 +39,65 @@ input {
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url('./images/banner.png');
+  background-image: url("./images/banner.png");
   z-index: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: transparent;
+  transition: 0.6s ease-in-out;
+  cursor: pointer;
+}
+nav.active {
+  box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.157);
+  background-color: #000000;
+}
+nav ul {
+  display: flex;
+}
+
+.active {
+  background-color: #ff1414;
+  color: #ffffff;
+  box-shadow: 5px 10px 30px rgba(198, 64, 64, 0.411);
+  transition: all ease 0.2s;
+}
+.active:hover {
+  background-color: #000000;
+  color: #ffffff;
+  box-shadow: 5px 10px 30px rgba(198, 64, 64, 0.411);
+  transition: all ease 0.2s;
+}
+nav ul li a {
+  font-family: "Lato";
+  height: 40px;
+  line-height: 43px;
+  margin: 3px;
+  padding: 0px 22px;
+  display: flex;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #ffffff;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  transition: 0.2s ease-in-out;
+}
+nav ul li a:hover {
+  background-color: #ff1414;
+  color: #ffffff;
+  box-shadow: 5px 10px 30px rgba(255, 2, 2, 0.336);
+  transition: all ease 0.2s;
+}
+nav .menu-btn,
+.menu-icon {
+  display: none;
 }
