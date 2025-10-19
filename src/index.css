@@ -434,6 +434,19 @@ nav .menu-btn,
   text-transform: uppercase;
 }
 
+.footer {
+  padding:24px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border-top:1px solid rgba(255,255,255,.03);
+  color:var(--muted);
+}
+
+.footer .socials a {
+  margin-left:12px
+}
+
 @media (max-width: 620px) {
   #contact form {
     width: 90%;
