@@ -8,7 +8,7 @@ function Header() {
         <h1><span>CORPO E SUA SAÚDE</span> CONOSCO</h1>
         <p className="details">Construa seu corpo e condicionamento físico com toque profissional</p>
         <div className="header-btns">
-            <a href="#" className="header-btn">VAMOS LÁ</a>
+            <a href="/#" className="header-btn">VAMOS LÁ</a>
         </div>
     </div>
   </div>
