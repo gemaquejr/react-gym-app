@@ -16,7 +16,7 @@ function Navbar() {
 
     return (
         <nav className={nav ? "nav active" : "nav"}>
-            <Link to="#" className="logo">
+            <Link to="main" className="logo" smooth={true} duration={2000}>
             <img src={logo} alt="" />
             </Link>
             <input className="menu-btn" type="checkbox" id="menu-btn" />
@@ -24,11 +24,11 @@ function Navbar() {
                 <span className="nav-icon"></span>
             </label>
             <ul className="menu">
-                <li><Link to="#">Conheça</Link></li>
-                <li><Link to="#">Programas</Link></li>
-                <li><Link to="#">Planos</Link></li>
-                <li><Link to="#">Sobre</Link></li>
-                <li><Link to="#">Contato</Link></li>             
+                <li><Link to="main" smooth={true} duration={1000}>Conheça</Link></li>
+                <li><Link to="features" smooth={true} duration={1000}>Programas</Link></li>
+                <li><Link to="offer" smooth={true} duration={1000}>Planos</Link></li>
+                <li><Link to="about" smooth={true} duration={1000}>Sobre</Link></li>
+                <li><Link to="contact" smooth={true} duration={1000}>Contato</Link></li>             
             </ul>
         </nav>
     )
