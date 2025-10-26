@@ -1,16 +1,16 @@
 import React from "react";
 
-function Featurebox(props) {
+function Featurebox({ image, title, children }) {
     return (
-            <div className="a-box">
+            <article className="a-box">
                 <div className="a-b-img">
-                    <img src={props.image} alt="" />
+                    <img src={image} alt={title} />
                 </div>
                 <div className="a-b-text">
-                    <h2>{props.title}</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <h2>{title}</h2>
+                    <p>{children}</p>
                 </div>
-            </div>
+            </article>
     )
 }
 
