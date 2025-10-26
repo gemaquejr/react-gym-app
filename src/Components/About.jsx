@@ -1,11 +1,12 @@
 import React from "react";
 import aboutimage from '../images/about.png'
+import Button from "./Button";
 
 function About() {
     return (
-        <div id="about">
+        <section id="about">
             <div className="about-image">
-                <img src={aboutimage} alt="" />
+                <img src={aboutimage} alt="História da academia" />
             </div>
             <div className="about-text">
                 <h1>Nossa História</h1>
@@ -15,9 +16,13 @@ function About() {
                    moderno e inspirador — onde cada aluno se sinta motivado a atingir seus objetivos,
                    seja ganhar massa, perder peso ou simplesmente viver com mais disposição.
                 </p>
-                <button>SAIBA MAIS</button>
+                <div className="about-btn">
+                    <Button onClick={() => alert('Em breve: página com mais detalhes!')}>
+                        {"Saiba Mais"}
+                    </Button>
+                </div>
             </div>
-        </div>
+        </section>
     )
 }
 
