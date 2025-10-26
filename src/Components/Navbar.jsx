@@ -17,7 +17,7 @@ function Navbar() {
     return (
         <nav className={nav ? "nav active" : "nav"}>
             <Link to="main" className="logo" smooth={true} duration={2000}>
-            <img src={logo} alt="" />
+            <img src={logo} alt="Gym logo" />
             </Link>
             <input className="menu-btn" type="checkbox" id="menu-btn" />
             <label className="menu-icon" htmlFor="menu-btn">
