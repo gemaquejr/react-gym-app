@@ -6,7 +6,6 @@ Aplicação web desenvolvida para gerenciamento e visualização de treinos em u
 
 ## 🚀 Funcionalidades
 
-* 📋 Visualização de treinos
 * 🏋️ Organização por grupo muscular
 * 📅 Planejamento semanal
 * 📱 Layout responsivo
@@ -59,5 +58,4 @@ http://localhost:3000
 * 🔐 Autenticação de usuários
 * 🧑‍🏫 Área do personal trainer
 * 📊 Dashboard com métricas
-* 🎥 Vídeos demonstrativos dos exercícios
 * ☁️ Integração com backend
